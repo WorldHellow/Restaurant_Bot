@@ -7,6 +7,7 @@ The tool we used for developing the chatbot is Rasa Stack. Rasa Stack consists o
 At the backend, we used python pandas dataframe for user query extraction. 
 
 Dependencies: 
+
 1: Python 2.7
 
 2: Rasa-Core
