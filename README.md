@@ -8,5 +8,7 @@ At the backend, we used python pandas dataframe for user query extraction.
 
 Dependencies: 
 1: Python 2.7
+
 2: Rasa-Core
+
 3: Rasa-NLU for training 
