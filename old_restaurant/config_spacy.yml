@@ -1,0 +1,6 @@
+{
+  "language": "en",
+  "pipeline":"spacy_sklearn",
+  "path":"./models/default/restaruntnlu",
+  "data":"./data/data.json"
+}

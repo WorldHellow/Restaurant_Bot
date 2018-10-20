@@ -1,0 +1,42 @@
+action_factory: null
+action_names:
+- utter_greet
+- utter_affirm
+- utter_bye
+- action_check_restaurants
+actions:
+- utter_greet
+- utter_affirm
+- utter_bye
+- bot.ActionCheckRestaurants
+config:
+  store_entities_as_slots: true
+entities:
+- location
+- food
+- cuisine
+intents:
+- greet
+- restaurant_search
+- affirm
+- goodbye
+slots:
+  cuisine:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  food:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  location:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_affirm:
+  - text: Thanks for using
+  utter_bye:
+  - text: Goodbye
+  utter_greet:
+  - text: Hy there
+  - text: Hi
+  - text: Hy how can i help you
+topics: []

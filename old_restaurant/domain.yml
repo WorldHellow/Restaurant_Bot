@@ -1,0 +1,39 @@
+intents:
+  - greet
+  - restaurant_search
+  - affirm
+  - goodbye
+
+entities:
+- location
+- food
+- cuisine
+
+actions:
+- utter_greet
+#- utter_search
+- utter_affirm
+- utter_bye
+- nlu_model.ActionCheckRestaurants
+
+slots:
+   location:
+     type: text
+   food:
+     type: text
+   cuisine:
+     type: text
+
+templates:
+   utter_greet:
+     - "Hy there"
+     - "Hi"
+     - "Hy how can i help you"
+#   utter_search:
+#     - "Finding Restarunt"
+   utter_affirm:
+     - "Thanks for using"
+   utter_bye:
+     - "Goodbye"
+
+
